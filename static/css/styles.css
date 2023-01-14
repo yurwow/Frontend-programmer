@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'Font-mon';
+    src: local('Font-mon'), url(../fonts/Montserrat-Medium.ttf);
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/background.png);
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 0px;
+
+    background: rgba(0,0,0,0);
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    left: 0px;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+}
+
+
+a {
+    color: #000 !important;
+    text-decoration: none
+}
+
+li {
+    list-style-type: none;
+}
+
+.logo {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 1375px;
+    top: 0px;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.logo_double {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 100px;
+    top: 100px
+}
+
+.name {
+    position: absolute;
+    width: 490px;
+    height: 51px;
+    left: 550px;
+    top: 5px;
+
+    font-family: 'Font-mon';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 51px;
+    text-align: center;
+
+    color: #DADADA;
+
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navigation {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 250px;
+    height: 1200px;
+    left: 0px;
+    top: 0px;
+    bottom: 0;
+    z-index: 999999;
+
+    background: #14A098;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navigation ul {
+    text-align: left;
+    list-style: none;
+    padding-right: 20%;
+    padding-top: 55%;
+}
+
+.navigation li {
+    margin: 40px 0;
+    font-family: "Font-mon";
+    font-size: 16px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.nav_text {
+    font-family: "Font-mon";
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    color: #CB2D6F;
+}
+
+.nav_text_foot {
+    font-family: "Font-mon";
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #CCCCCC;
+}
+
+.navigation_skills {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 250px;
+    height: 135%;
+    left: 0px;
+    top: 0px;
+    bottom: 0;
+    z-index: 999999;
+
+    background: #2EA2DB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navigation_skills ul {
+    text-align: left;
+    list-style: none;
+    padding-right: 20%;
+    padding-top: 10%;
+}
+
+.navigation_skills li {
+    margin: 40px 0;
+    font-family: "Font-mon";
+    font-size: 16px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.foot{
+    position: absolute;
+    font-family: 'Font-mon';
+    font-size: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    bottom: 10px;
+    left: 300px;
+}
+
+.home_text {
+    position: absolute;
+    left: 300px;
+    top: 60px;
+}
+
+.home_text p {
+    font-size: 15px;
+    font-family: 'Font-mon';
+    color: #DADADA;
+}
+
+.home_text h3 {
+    text-align: center;
+    font-family: 'Font-mon';
+    color: #DADADA;
+}
+
+.home_text li {
+    font-family: 'Font-mon';
+    color: #DADADA;
+}
+
+.home_text h1 {
+    font-family: 'Font-mon';
+    width: 600px;
+    color: #DADADA;
+    position: absolute;
+    left: 400px;
+    top: -15px
+}
+
+.home_img {
+    position:absolute;
+    width: 380px;
+    height: 225px;
+    right: 35px;
+    top: 430px;
+}
+
+ .empty {
+     height: 40px;
+ }
+
+.demand_graph_1 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+}
+
+.demand_graph_2 {
+    width: 400px;
+    height: 300px;
+    left: 20px;
+    position: absolute;
+    top: 300px
+}
+
+.tables {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: flex-start;
+    position: absolute;
+    left: 500px;
+    top: 50px
+}
+
+.tables table {
+    color: white;
+}
+
+.geography_graph_1 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+}
+
+.geography_graph_2 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 300px;
+    left: 20px;
+}
+
+.graph_title1 {
+    font-family: "Font-mon";
+    position: absolute;
+    z-index: 999999;
+    color: white;
+    top: -41px;
+    left: 120px;
+    width: 300px;
+}
+
+.graph_title2 {
+    font-family: "Font-mon";
+    position: absolute;
+    z-index: 999999;
+    color: black;
+    left: 120px;
+    top: 290px;
+    width: 300px;
+}
+
+.tables_skills {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: flex-start;
+    position: absolute;
+    left: 265px;
+    top: 50px;
+
+}
+
+.tables_skills table {
+    color: white;
+}
+
+.skills_graph {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 400px;
+    top: 425px
+}
+
+.empty_skills {
+    height: 750px;
+}
+
+.last_text {
+    font-family: 'Font-mon';
+    width: 600px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 100px;
+    top: -15px
+}
+
+.LVtable {
+    left: 300px;
+    top: 100px;
+    position: absolute;
+    color: #FFFFFF;
+}
+
+.LVtable p {
+    color: #FFFFFF;
+}

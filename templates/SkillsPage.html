@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend-программист</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+</head>
+<body>
+{% for nav in navigation %}
+
+<header>
+</header>
+<main>
+    <div class="body">
+        <div class="navigation" style="height: 1500px">
+            <p class="nav_text">{{ nav.title|safe }}</p>
+            <img class="logo_double" src="{% static 'images/logotip.png' %}">
+            <nav>
+                <ul>
+                    <li><a href="/">{{ nav.first_menu }}</a></li>
+                    <li><a href={% url 'demendPage' %}>{{ nav.second_menu }}</a></li>
+                    <li><a href={% url 'geographyPage' %}>{{ nav.thierd_menu }}</a></li>
+                    <li><a href={% url 'skillsPage' %}>{{ nav.fourth_menu }}</a></li>
+                    <li><a href={% url 'lastVacancyPage' %}>{{ nav.fifth_menu }}</a></li>
+                </ul>
+            </nav>
+        </div>
+        {% endfor %}
+        {% for main in home_info %}
+        <div class="home_text">
+            {{ main.text|safe }}
+            <div class="empty"></div>
+            <img class="home_img" src="{{ main.photo.url }}"/>
+        </div>
+    </div>
+ {% endfor %}
+{% for skills in skills_info %}
+        <div class="home_text" style="margin-top: 5%; margin-left: 8%">
+            <h1 style="margin-top: 4%">{{ skills.first_title }}</h1>
+            <div class="tables_skills">
+                {{ skills.content|safe }}
+
+            </div>
+            <img class="skills_graph" src={{ skills.graph.url }}/>
+            <div class="empty_skills"></div>
+        </div>
+    </div>
+{% endfor %}
+            </div>
+            <div class="empty_skills"></div>
+        </div>
+    </div>
+</main>
+{% for navigator in navigation %}
+<footer>
+    <div class="foot">{{ navigator.author|safe }}</div>
+</footer>
+{% endfor %}
+</body>
+</html>
