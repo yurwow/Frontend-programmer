@@ -48,7 +48,7 @@ def LastVacancyPage(request):
             return result_list
 
     hh = HHAPI('front-end')
-    vacs = hh.get_data_vacancies('2022-12-15', 10)
+    vacs = hh.get_data_vacancies('2023-01-15', 10)
 
     last_vacancies = LastVacancyModel.objects.all()
     navigation = Navigation.objects.all()
