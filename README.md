@@ -1,3 +1,3 @@
-http://yurwow.pythonanywhere.com/
+http://kuzin.pythonanywhere.com/
 # frontend-программист
  
